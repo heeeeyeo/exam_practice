@@ -1,0 +1,95 @@
+/* css 작성 */
+body {
+    /* 요소를 가운데 정렬하는 법 3가지
+    display, justify-content, align-items를 세트로 사용! (정렬하고싶은 부모요소에 속성을 적용)
+    margin: auto (정렬하고싶은 해당 요소에 사용, 이걸 쓰면 마진을 쓸 수 없으니까 의도에 맞추어 잘 사용)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 50%;
+    height: 100%;
+}
+
+#container {
+    width: 800px;
+    height: 620px;
+    border: 1px dotted black;
+
+    padding: 5px;
+    /* margin: auto; */
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    background-color: #00008B;
+}
+
+section {
+    background-color: #F0FFFF;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+h4 {
+    color: blue;
+}
+
+.b {
+    /* border: 1px solid black; */
+    display: flex;
+    line-height: 25px;
+    list-style: none;
+    margin: 0%;
+}
+
+.c {
+    width: 30%;
+}
+
+.c::after {
+    content: ":";
+}
+
+.d {
+    color: blue;
+    margin: 0 5px;
+    display: none;
+}
+
+.d::before {
+    content: "[예상점수] ";
+}
+
+.d::after {
+    content: "점";
+}
+
+#btnBox {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#calculate {
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+.score {
+    width: 80px;
+    text-align: end;
+    margin: 0 5px;
+}
+
+footer {
+    display: none;
+}
+
+footer>ul>li::after {
+    content: ":";
+}
