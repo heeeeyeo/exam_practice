@@ -37,7 +37,7 @@ h4 {
     color: blue;
 }
 
-.b {
+.custom-list {
     /* border: 1px solid black; */
     display: flex;
     line-height: 25px;
@@ -45,11 +45,11 @@ h4 {
     margin: 0%;
 }
 
-.c {
+.list-item {
     width: 30%;
 }
 
-.c::after {
+.list-item::after {
     content: ":";
 }
 
@@ -67,7 +67,7 @@ h4 {
     content: "점";
 }
 
-#btnBox {
+#btn-box {
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
@@ -92,4 +92,17 @@ footer {
 
 footer>ul>li::after {
     content: ":";
+}
+
+footer>#result-label {
+    display: flex;
+    justify-content: center;
+}
+
+footer>#result-label>strong {
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    background-color: gainsboro;
+    color: red;
 }
