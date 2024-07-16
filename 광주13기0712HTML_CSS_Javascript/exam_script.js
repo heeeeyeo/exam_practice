@@ -1,3 +1,12 @@
+// 자바스크립트 실행의 안정성을 높이기 위해서 쓴다 ↓
+// document.addEventListener('DOMContentLoaded', function(){});
+
+/*
+javascript작성 가이드라인 참고
+https://github.com/tipjs/javascript-style-guide 한글번역
+https://github.com/airbnb/javascript            원문사이트
+*/
+
 // javascript 작성
 function calculateScore(elementId) {
     const element = document.querySelector("#" + elementId);
