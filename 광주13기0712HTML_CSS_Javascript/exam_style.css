@@ -70,7 +70,7 @@ h4 {
     (2024년 7월 기준 3개월 전 도입됨, 브라우저 호환성을 확인하고 사용할 것.)
     (원래는 Sass를 통하면 사용할 수 있던 작성법)
 */
-.d {
+.subject-score {
     display: none;
     margin: 0 5px;
     color: blue;
@@ -85,11 +85,11 @@ h4 {
 }
 
 /*
-.d::before {
+.subject-score::before {
     content: "[예상점수] ";
 }
 
-.d::after {
+.subject-score::after {
     content: "점";
 }
 */
@@ -108,7 +108,7 @@ h4 {
     background-color: aqua;
 }
 
-.score {
+.score-input {
     width: 80px;
     text-align: end;
     margin: 0 5px;

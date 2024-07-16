@@ -31,33 +31,33 @@
                     <!-- 태그안에서 호출하는 함수는 지양 하는 것 이 좋다 -->
                     <ul class="custom-list">
                         <li class="list-item">1. 소프트웨어 설계</li>
-                        <li>20문제 중<input type="text" class="score" id="score1" placeholder="0"
-                                oninput="calculateScore(this.id)">개 <span class="d" id="subject1"></span></li>
+                        <li class="score">20문제 중<input type="text" class="score-input" id="score1" placeholder="0" autocomplete="off">개
+                            <span class="subject-score" id="subject1"></span></li>
                     </ul>
                     <ul class="custom-list">
                         <li class="list-item">2. 소프트웨어 개발</li>
-                        <li>20문제 중<input type="text" class="score" id="score2" placeholder="0"
-                                oninput="calculateScore(this.id)">개 <span class="d" id="subject2"></span></li>
+                        <li class="score">20문제 중<input type="text" class="score-input" id="score2" placeholder="0" autocomplete="off">개
+                            <span class="subject-score" id="subject2"></span></li>
                     </ul>
                     <ul class="custom-list">
                         <li class="list-item">3. 데이터베이스 구축</li>
-                        <li>20문제 중<input type="text" class="score" id="score3" placeholder="0"
-                                oninput="calculateScore(this.id)">개 <span class="d" id="subject3"></span></li>
+                        <li class="score">20문제 중<input type="text" class="score-input" id="score3" placeholder="0" autocomplete="off">개
+                            <span class="subject-score" id="subject3"></span></li>
                     </ul>
                     <ul class="custom-list">
                         <li class="list-item">4. 프로그래밍 언어활용</li>
-                        <li>20문제 중<input type="text" class="score" id="score4" placeholder="0"
-                                oninput="calculateScore(this.id)">개 <span class="d" id="subject4"></span></li>
+                        <li class="score">20문제 중<input type="text" class="score-input" id="score4" placeholder="0" autocomplete="off">개
+                            <span class="subject-score" id="subject4"></span></li>
                     </ul>
                     <ul class="custom-list">
                         <li class="list-item">5. 정보시스템 구축관리</li>
-                        <li>20문제 중<input type="text" class="score" id="score5" placeholder="0"
-                                oninput="calculateScore(this.id)">개 <span class="d" id="subject5"></span></li>
+                        <li class="score">20문제 중<input type="text" class="score-input" id="score5" placeholder="0" autocomplete="off">개
+                            <span class="subject-score" id="subject5"></span></li>
                     </ul>
                 </div>
                 <!-- 최종결과 출력용 버튼 생성 -->
                 <div id="btn-box">
-                    <button type="submit" id="calculate" onclick="showResult()">최종 결과 확인</button>
+                    <button type="submit" id="calculate">최종 결과 확인</button>
                 </div>
             </section>
 
