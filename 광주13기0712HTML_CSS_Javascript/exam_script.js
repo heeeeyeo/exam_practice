@@ -2,22 +2,22 @@
 // document.addEventListener('DOMContentLoaded', function(){});
 
 /*
-javascript작성 가이드라인 참고
+javascript 작성 가이드라인 참고
 https://github.com/tipjs/javascript-style-guide 한글번역
 https://github.com/airbnb/javascript            원문사이트
 */
 
-// 각 입력 태그에 입력 발생시 실행되는 함수
-document.addEventListener('DOMContentLoaded', function(){
+// 각 입력 태그에 입력 발생 시 실행되는 함수
+document.addEventListener('DOMContentLoaded', function () {
     const inputContainer = document.getElementById("input-container");
     // 이벤트 위임을 사용하여 inputContainer에 이벤트 리스너를 추가
-    inputContainer.addEventListener('keyup', function(event) {
+    inputContainer.addEventListener('keyup', function (event) {
         // 이벤트가 발생한 요소를 찾음
         const targetElement = event.target;
-        
+
         const element = document.querySelector("#" + targetElement.id);
         const result = element.value * 5;
-        
+
         const regex = /[^0-9]/g;        // 숫자가 아닌 모든 글자를 찾는 정규식
         const childElementId = "subject" + targetElement.id.replace(regex, "");
         const childElement = document.querySelector("#" + childElementId);
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
     // 최종결과 버튼 클릭시 실행되는 함수
-    document.querySelector('#calculate').addEventListener('click', function() {
+    document.querySelector('#calculate').addEventListener('click', function () {
         const scores = document.querySelectorAll(".subject-score");
         let sum = 0;
         let count = 0;
