@@ -7,7 +7,6 @@ https://github.com/tipjs/javascript-style-guide 한글번역
 https://github.com/airbnb/javascript            원문사이트
 */
 
-// 각 입력 태그에 입력 발생 시 실행되는 함수
 document.addEventListener('DOMContentLoaded', function () {
     const inputContainer = document.getElementById("input-container");
     // 이벤트 위임을 사용하여 inputContainer에 이벤트 리스너를 추가
